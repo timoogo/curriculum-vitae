@@ -1,0 +1,28 @@
+.cv_container{
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    margin: 5rem auto;
+    & .memberInfo{
+        & .basic{
+
+            display: flex;
+            flex-direction: column;
+            & span.mail {
+                display: inline-block;
+            }
+        }
+    }
+    & .educationAndTraining{
+        & ul {
+            display: flex;
+            flex-direction: column;
+            height: max-content;
+            justify-content: space-around;
+            
+
+       
+        }
+    }
+}
+

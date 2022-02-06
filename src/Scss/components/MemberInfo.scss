@@ -1,0 +1,45 @@
+div.memberInfo{
+    background-color: yellowgreen;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    & span{
+        &:hover:not(#name){
+            transform: translate(-25%, 0);
+
+        }
+        &[title]:hover:after{
+            content:'  'attr(title) '    ';
+            top: -100%;
+            left: -50px;
+        }
+        transition: 1s;
+        background-color: red;
+        color: white;
+        padding: 1rem;
+        position: absolute;
+        &#age{
+            top: -55vh;
+            right: 90%;
+        
+        }
+    
+        &#promotion{
+            top: -55vh;
+            left: 85%;
+        }
+        &#name{
+            transition: all 1s ease-in-out;
+            &:hover{
+                width: 35%;
+                transform: translate(130%, 0);
+
+            }
+           // inset: -10% 0 -10%;
+            bottom: 5%;
+            width: 75%;
+        }
+    }
+}

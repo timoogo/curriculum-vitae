@@ -1,0 +1,7 @@
+div.titleSection{
+    display: flex;
+    align-items: center;
+    & svg {
+        padding: 1rem;
+    }
+}

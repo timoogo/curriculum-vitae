@@ -1,0 +1,19 @@
+
+@import "./../helpers/variables";
+@import '../helpers/mixins';
+
+a#cta{
+    background-color: red;
+    padding: 1rem;
+    margin-top: 1rem; 
+    color: white;
+    text-decoration: none;
+    transition: 1s all;
+    border:1px transparent;
+    &:hover{
+        color: red;
+        background-color: white;
+        border: 1px solid red;
+        border-radius: 12px;
+    }
+}

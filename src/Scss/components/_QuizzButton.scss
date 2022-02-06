@@ -1,0 +1,39 @@
+/* From cssbuttons.io by @nikk7007 */
+button {
+    padding: 0.8em 1.8em;
+    border: 2px solid lightcoral;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .8s;
+    z-index: 1;
+    font-family: inherit;
+    color: lightcoral;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: lightcoral;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before, button:focus::before {
+    width: 750%;
+    height: 480%;
+   }
+   
+   button:hover, button:focus {
+    color: #fff;
+   }
+   

@@ -1,0 +1,44 @@
+
+@import "./../helpers/variables";
+@import '../helpers/mixins';
+
+header {
+        @include my-font;
+    & nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+        & .logo {
+            align-items: center;
+            display: flex;
+            padding: 1rem;
+            &:hover {
+                background-color: red;
+              & a{
+                  color: white;
+                }
+            }
+        }
+        & .navigation {
+            display: flex;
+            justify-content: space-evenly;
+            flex-basis: 50%;
+            align-items: center;
+            & a{
+                padding: 1rem 2rem;
+                &:hover {
+                    background-color: red;
+                      color: white;
+
+                }
+            }
+        }
+
+    }
+    &  a{
+         color: red;
+         text-decoration: none;
+
+}
+}

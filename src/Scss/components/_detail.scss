@@ -1,0 +1,28 @@
+@import '../helpers/_colors.scss';
+details{
+    margin: 1rem auto;
+    cursor: pointer;
+    width: 75vw;
+    transition: all 1s;
+    &:not([open]){
+        border: blue 1px solid;
+        padding: 1rem;
+    }
+    &[open]{
+        background-color: lightblue;
+        padding: 1rem;
+    }
+    &:not([open]):hover{
+        background-color: red;
+        color: white;
+        padding: 1rem;
+    }
+}
+details[open] summary ~ * {
+    animation: sweep .5s ease-in-out forwards;
+  }
+  
+  @keyframes sweep {
+    0%    {opacity: 0; margin-left: -10px}
+    100%  {opacity: 1; margin-left: 0px}
+  }

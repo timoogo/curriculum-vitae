@@ -1,0 +1,14 @@
+.quizz {
+    & .options {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap :1rem;
+    
+    }
+  &  button.next{
+        width: 90%;
+        
+        margin: 5vh auto;
+        display: block;
+    }
+}

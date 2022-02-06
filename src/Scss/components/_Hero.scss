@@ -1,0 +1,25 @@
+@import "./../helpers/variables";
+@import '../helpers/mixins';
+section {
+    @include my-font;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & .hero__text{
+        padding: 1rem;
+        text-justify: distribute;
+        height: max-content;
+        & p {
+            padding: 1rem 0;
+        }
+    }
+    & .hero__image{
+        width: fit-content;
+        & img{
+            width: 33vw;
+            padding: .2rem;
+            border:.3rem red solid;
+            position: relative;
+        }
+    }
+}

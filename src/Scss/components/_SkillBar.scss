@@ -1,0 +1,21 @@
+@import '../helpers/mixins';
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 1s;
+    &:hover{
+        background-color: lightcoral;
+        color: white;
+    }
+    & label{
+        padding-left: .5rem;
+    }
+    margin: 0 7.5rem;
+    & progress{
+        width: 30vw;
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+}
