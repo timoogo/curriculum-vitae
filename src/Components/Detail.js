@@ -3,7 +3,7 @@ const Detail = (props) =>{
     return (
         <>
                     <details>
-                <summary>{props.title} : <span>{props.info}</span> </summary>
+                <summary>{props.the_title} : <span>{props.info}</span> </summary>
                 <p>{props.content}</p>
               </details>
         </>

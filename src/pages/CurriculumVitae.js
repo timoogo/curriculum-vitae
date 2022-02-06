@@ -1,4 +1,6 @@
-import "../Scss/components/_ProjectList.scss";
+import "../Scss/components/_CurriculumVitae.scss";
+import "../Scss/components/_PersonalInfo.scss"
+import "../Scss/components/MemberInfoCV.scss";
 import Navigation from "../Components/Navigation";
 import MemberInfoCV from "../Components/MemberInfoCV";
 const ProjectList = () => {

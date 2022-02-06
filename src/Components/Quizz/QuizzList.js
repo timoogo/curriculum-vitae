@@ -8,10 +8,24 @@ const QuizzList =() =>{
     return (
         <>
         <Navigation/>
-        <QuizzManager Quizz={test}></QuizzManager>
-        <QuizzManager Quizz={tech}/>
-        <QuizzManager Quizz={tvshow}/>
-        <QuizzManager Quizz={dev}/>
+            <div className="quizzlist">
+                <div className="theQuizz">
+                <QuizzManager Quizz={test}></QuizzManager>
+                </div>
+                <div className="theQuizz">
+                <QuizzManager Quizz={tech}/>
+                </div>
+                <div className="theQuizz">
+                <QuizzManager Quizz={tvshow}/>
+
+                </div>
+                <div className="theQuizz">
+                <QuizzManager Quizz={dev}/>
+
+                </div>
+           
+       
+            </div>
         </>
     )
 }

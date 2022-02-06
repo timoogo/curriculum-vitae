@@ -3,7 +3,7 @@ const ProjectDetails = (props) =>{
     return (
     <>
 
-     <h1>{props.projectName}</h1>
+     <h2>{props.projectName}</h2>
      <p>{props.projectDescription}</p>
      <a href={"https://github.com/timoogo/" + props.github_repo}>Github {props.projectName}</a>
      { //Check if hasVideo

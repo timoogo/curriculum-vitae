@@ -1,3 +1,20 @@
-.basic{
-    display: flex;
+h1{
+    font-size: 4rem;
+    color: red;
+    margin-left: 3rem;
+}
+.cv_container{
+    display: block;
+
+    & h2{
+        font-size: 3rem;
+    }
+    & section.memberInfo  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
 }

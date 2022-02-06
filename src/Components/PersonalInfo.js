@@ -6,7 +6,7 @@ const PersonalInfo = (props) => {
     return (
 
         <div className="basic">
-    <TitleSection title="Personal details" icon={faAddressBook}/>
+    <TitleSection the_title="Personal details" icon={faAddressBook}/>
     <div>
         <img src="/images/me.jpeg" />
     </div>

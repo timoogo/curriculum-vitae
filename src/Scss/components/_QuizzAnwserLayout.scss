@@ -12,3 +12,23 @@
         display: block;
     }
 }
+.quizzlist{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    h2{
+        color: lightcoral;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    & .theQuizz{
+        & .Menu {
+            margin: auto;
+            & button{
+                width: 100%;
+            }
+        }
+    }
+}

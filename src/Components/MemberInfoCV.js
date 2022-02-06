@@ -17,46 +17,46 @@ return (
     </section>
     <section className="aboutMe">
         <p>Il faut un ordinateur équipé d'un système d'exploitation.
-        <TitleSection title="About me" icon={faUser}/>
+        <TitleSection the_title="About me" icon={faUser}/>
                 L'ordinateur doit disposer d'une mémoire et, idéalement, d'une sorte
                 de stockage à long terme. Un dispositif d'entrée et un dispositif de
                 sortie sont recommandés.</p>
     </section>
     <section className="educationAndTraining">
-        <TitleSection title="Education and training" icon={faCheck}/>
+        <TitleSection the_title="Education and training" icon={faCheck}/>
             <ul>
-            <Detail title="Nursery school"
+            <Detail the_title="Nursery school"
                     info="Victor Hugo"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
                     
         />
-            <Detail title="Primay school"
+            <Detail the_title="Primay school"
                     info="Sainte Thérèse"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
                     
         />
-            <Detail title="Secondary school"
+            <Detail the_title="Secondary school"
                     info="Collège Toulouse Lautrec"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
                     
         />
            
-            <Detail title="Highschool"
+            <Detail the_title="Highschool"
                     info="Lycée Toulouse Lautrec"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
                     
         />
-            <Detail title="University"
+            <Detail the_title="University"
                     info="WebSchool Factory"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
                     
         />
-            <Detail title="University"
+            <Detail the_title="University"
                     info="IIM"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "
@@ -66,7 +66,7 @@ return (
         </ul>
     </section>
     <section className="skillsAndQualifications">
-        <TitleSection title="Skills and Qualifications" icon={faChartBar}/>
+        <TitleSection the_title="Skills and Qualifications" icon={faChartBar}/>
         <SkillBar skillValue="25" skillName="React"/>
         <SkillBar skillValue="45" skillName="Laravel"/>
         <SkillBar skillValue="65" skillName="JavaScript"/>
@@ -74,34 +74,56 @@ return (
     </section>
     <section className="diplomas">
 
-        <TitleSection title="Diploma" icon={faGraduationCap}/>
-        <Detail title="2017"
+        <TitleSection the_title="Diploma" icon={faGraduationCap}/>
+        <Detail the_title="2017"
                     info="Baccalaureat"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "         
         />
-        <Detail title="2018"
+        <Detail the_title="2018"
                     info="Voltaire"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "         
         />
-        <Detail title="2018"
+        <Detail the_title="2018"
                     info="IELTS"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "         
         />
-        <Detail title="2017-2019"
+        <Detail the_title="2017-2019"
                     info="1rst Year at WebSchool Factory and half of the second year"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "         
         />
-        <Detail title="2022"
+        <Detail the_title="2022"
                     info="Bacchelor at IIM"
                     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati at est corporis nesciunt. Velit quod natus laborum reiciendis facilis numquam nam ipsam, soluta ad, adipisci, quos excepturi! Nemo, dicta eum.
                     "         
         />
     </section>
-  
+    <section className="internships">
+    <TitleSection the_title="Internship" icon={faChartBar}/>
+                   
+      <Detail the_title="Freelance developer"  info="Songazine"
+                    content="Création d'une interface web en VueJS pour représenter une carte intéractive de la France, sur laquelle on obtient des infos que les détenteurs peuvent fournir" />
+      
+      <Detail the_title="Graphic assistant"  info="Malakoff Mederic"
+                    content="Conception et modernisation de maquettes pour l’Usine Front Digital et Data de la DSI
+                    • Apprentissage des bases Figma 
+                    • Mise en cohérence graphique des écrans existants (côté métier / côté client)  
+                    • Création d’un document d’audit révélant les incohérences graphiques du CMS que l’équipe utilisait
+                    • Proposition de maquette intégrale du site Prévoyance IEG
+                    • Proposition d’amélioration du parcours utilisateur à travers un document expliquant les améliorations graphiques bénéfiques à l’utilisateur."         />
+      
+      <Detail the_title="Vice president"  info="FabLab, WebSchool Factory"
+                    content="Conception et modernisation de maquettes pour l’Usine Front Digital et Data de la DSI
+                    • Apprentissage des bases Figma 
+                    • Mise en cohérence graphique des écrans existants (côté métier / côté client)  
+                    • Création d’un document d’audit révélant les incohérences graphiques du CMS que l’équipe utilisait
+                    • Proposition de maquette intégrale du site Prévoyance IEG
+                    • Proposition d’amélioration du parcours utilisateur à travers un document expliquant les améliorations graphiques bénéfiques à l’utilisateur."         />
+      
+    </section>
 </div>
 )
 }

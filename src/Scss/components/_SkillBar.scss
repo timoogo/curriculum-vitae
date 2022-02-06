@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     transition: all 1s;
+    border: 1px solid lightcoral;
     &:hover{
         background-color: lightcoral;
         color: white;
@@ -18,4 +19,25 @@
         margin: 1rem;
 
     }
+}
+.skill {
+    & progress {
+        background-color: lightblue;
+      }
+      
+     & progress::-webkit-progress-value {
+        background: lightblue;
+      }
+      
+     & progress::-moz-progress-bar {
+        background: lightcolor;
+      }
+      
+     & progress::-webkit-progress-value {
+        background: red;
+      }
+      
+     & progress::-webkit-progress-bar {
+        background: blue;
+      }
 }

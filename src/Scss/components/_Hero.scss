@@ -1,13 +1,19 @@
 @import "./../helpers/variables";
 @import '../helpers/mixins';
 section {
+    & h2{
+        font-size: 4rem;
+        color:red
+    }
     @include my-font;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
     & .hero__text{
         padding: 1rem;
         text-justify: distribute;
+        flex-basis: 50%;
         height: max-content;
         & p {
             padding: 1rem 0;
@@ -20,6 +26,31 @@ section {
             padding: .2rem;
             border:.3rem red solid;
             position: relative;
+        }
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    section{
+        flex-wrap: nowrap;
+        flex-direction: column !important;
+
+        & .hero__image{
+            width: 100%;
+            & img{
+                width: 80%;
+                margin:5vh auto;
+
+            }
+            & .memberInfo{
+                width: 90%;
+                margin-left: 5vw;
+                top: -100px;
+
+                & span#name{
+                    bottom: -15%;
+                }            }
         }
     }
 }

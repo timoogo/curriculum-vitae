@@ -5,8 +5,9 @@ const SkillBar = (props) =>{
     <>
         <div className="skill">
         <label htmlFor={props.skillName}>{props.skillName}</label>
-        <progress 
-                id={props.skillName} max="100" value={props.skillValue}></progress>
+        <progress id={props.skillName} max="100" value={props.skillValue}>
+           </progress>
+           <span>{props.skillValue} % </span>
         </div>
     </>)
 }

@@ -5,7 +5,7 @@ const TitleSection = (props) =>{
         <>
                <div className="titleSection">
                    <FontAwesomeIcon icon={props.icon}></FontAwesomeIcon>
-                   <h2>{props.title}</h2>
+                   <h2>{props.the_title}</h2>
 
                </div>
         </>
